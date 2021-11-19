@@ -37,7 +37,6 @@ public class Categoria implements Serializable{
     //método set para establecer
     public void setNombre(String nombre) {
         this.nombre = nombre;
-    }
-          
+    }         
     
 }
