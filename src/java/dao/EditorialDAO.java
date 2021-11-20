@@ -80,8 +80,8 @@ public class EditorialDAO {
             Connection con = Conexion.conectar();
             /*consulta preparada*/
             PreparedStatement st = con.prepareStatement(SQL);
-            /*st.setString(1, cat.getNombre());
-              esto de arriba se comenta porque no enviamos ningún parámetro*/
+            st.setString(1, rfc);
+              /*esto de arriba se comenta porque no enviamos ningún parámetro*/
             /*--- guarda resultado de la consulta en la variable "resultado" ---*/
             ResultSet resultado = st.executeQuery();
             Editorial edi;
